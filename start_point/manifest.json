@@ -1,6 +1,6 @@
 {
   "display_name": "Python, unittest",
-  "image_name": "cyberdojofoundation/python_unittest",
+  "image_name": "cyberdojofoundation/python_unittest:3734f21",
   "visible_filenames":
   [
     "test_hiker.py",
