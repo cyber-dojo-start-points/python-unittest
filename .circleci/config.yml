@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build-publish-trigger:
+  test:
     machine:
       image: ubuntu-1604:201903-01
     steps:
@@ -19,13 +19,13 @@ workflows:
             branches:
               only: [ master ]
     jobs:
-      - build-publish-trigger:
+      - test:
           filters:
             branches:
               only: [ master ]
   commit:
     jobs:
-      - build-publish-trigger:
+      - test:
           filters:
             branches:
               only: [ master ]
