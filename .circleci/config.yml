@@ -1,0 +1,31 @@
+version: 2
+jobs:
+  build-publish-trigger:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - checkout
+      - run:
+          name: Build Language-Start-Point image, test it
+          command: ./run_tests.sh
+
+workflows:
+  version: 2
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only: [ master ]
+    jobs:
+      - build-publish-trigger:
+          filters:
+            branches:
+              only: [ master ]
+  commit:
+    jobs:
+      - build-publish-trigger:
+          filters:
+            branches:
+              only: [ master ]
