@@ -1,13 +1,14 @@
-import hiker
+from hiker import global_answer, Hiker
 import unittest
 
 
 class TestHiker(unittest.TestCase):
 
-    def test_life_the_universe_and_everything(self):
-        '''simple example to start you off'''
-        douglas = hiker.Hiker()
-        self.assertEqual(42, douglas.answer())
+    def test_global_method(self):
+        self.assertEqual(42, global_answer())
+
+    def test_instance_method(self):
+        self.assertEqual(42, Hiker().instance_answer())
 
 
 if __name__ == '__main__':

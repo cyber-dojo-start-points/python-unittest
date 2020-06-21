@@ -8,7 +8,6 @@
     "cyber-dojo.sh"
   ],
   "filename_extension": [ ".py" ],
-  "max_seconds": 10,
   "tab_size": 4,
   "progress_regexs":
   [
