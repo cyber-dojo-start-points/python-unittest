@@ -4,7 +4,7 @@ import unittest
 
 class TestHiker(unittest.TestCase):
 
-    def test_global_method(self):
+    def test_global_function(self):
         self.assertEqual(42, global_answer())
 
     def test_instance_method(self):
