@@ -1,6 +1,6 @@
 {
   "display_name": "Python 3.13, unittest",
-  "image_name": "ghcr.io/cyber-dojo-languages/python_unittest:044077e",
+  "image_name": "ghcr.io/cyber-dojo-languages/python_unittest:cf9843d",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
