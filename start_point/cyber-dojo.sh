@@ -24,8 +24,8 @@ coverage3 run \
   --module unittest \
   *test*.py
 
-# https://coverage.readthedocs.io/en/v4.5.x/index.html
-
+# https://coverage.readthedocs.io
+echo
 coverage3 report \
   --show-missing \
   | tee ${REPORT_DIR}/coverage.txt
