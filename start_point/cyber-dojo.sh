@@ -12,13 +12,18 @@ function cyber_dojo_enter()
 function cyber_dojo_exit()
 {
   # 2. Remove text files we don't want returned.
-  cyber_dojo_delete_dirs .pytest_cache # ...
+  cyber_dojo_delete_dirs .pytest_cache
+  cyber_dojo_delete_dirs .mypy_cache
   #cyber_dojo_delete_files ...
 }
 cyber_dojo_enter
 trap cyber_dojo_exit EXIT SIGTERM
 # --------------------------------------------------------------
 
+echo MyPy
+mypy *.py | tee ${REPORT_DIR}/mypy.txt || true
+
+echo
 coverage3 run \
   --source=${CYBER_DOJO_SANDBOX} \
   --module unittest \
