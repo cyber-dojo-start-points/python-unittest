@@ -24,14 +24,14 @@ echo MyPy
 mypy *.py | tee ${REPORT_DIR}/mypy.txt || true
 
 echo
-coverage3 run \
+coverage run \
   --source=${CYBER_DOJO_SANDBOX} \
   --module unittest \
   *test*.py
 
 # https://coverage.readthedocs.io
 echo
-coverage3 report \
+coverage report \
   --show-missing \
   | tee ${REPORT_DIR}/coverage.txt
 
