@@ -13,11 +13,22 @@ function cyber_dojo_exit()
 {
   # 2. Remove text files we don't want returned.
   cyber_dojo_delete_dirs .pytest_cache
-  cyber_dojo_delete_dirs .mypy_cache
   #cyber_dojo_delete_files ...
 }
 cyber_dojo_enter
 trap cyber_dojo_exit EXIT SIGTERM
+
+# --------------------------------------------------------------
+# mypy spends most of its time on typeshed's stubs for the standard library
+# rather than on anything you wrote, and that work is the same on every test-run.
+# The image holds it already analysed; this says where. Left to itself mypy
+# would use .mypy_cache here in the sandbox, which starts empty every run.
+export MYPY_CACHE_DIR=/mypy-cache
+
+# coverage watches your code through sys.monitoring rather than by a callback
+# on every line, which is a good deal cheaper. The numbers it reports are the
+# same either way.
+export COVERAGE_CORE=sysmon
 # --------------------------------------------------------------
 
 echo MyPy

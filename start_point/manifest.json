@@ -8,7 +8,7 @@
     "unittest",
     ""
   ],
-  "image_name": "ghcr.io/cyber-dojo-languages/python_unittest:9e3179c",
+  "image_name": "ghcr.io/cyber-dojo-languages/python_unittest:a069983",
   "visible_filenames": [
     "test_hiker.py",
     "hiker.py",
