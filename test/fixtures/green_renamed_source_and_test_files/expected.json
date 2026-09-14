@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 45,
+  "match_counts": {
+    "^Ran 1 test in ": 1,
+    "^OK$": 1,
+    "^fizz_buzz\\.py +[0-9]+ +0 +100%$": 1,
+    "^test_fizz_buzz\\.py +[0-9]+ +0 +100%$": 1,
+    "hiker": 0
+  }
+}

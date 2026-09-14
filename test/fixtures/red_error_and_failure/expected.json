@@ -1,0 +1,11 @@
+{
+  "match_counts": {
+    "^Ran 2 tests in ": 1,
+    "^FAILED \\(failures=1, errors=1\\)$": 1,
+    "^FAIL: test_life_the_universe_and_everything ": 1,
+    "^ERROR: test_the_checksum_of_the_answer ": 1,
+    "^AssertionError: 42 != 54$": 1,
+    "^ZeroDivisionError: division by zero$": 1,
+    "^OK$": 0
+  }
+}

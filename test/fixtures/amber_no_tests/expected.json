@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^Ran 0 tests in ": 1,
+    "^NO TESTS RAN$": 1,
+    "^OK$": 0,
+    "^TOTAL ": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "match_counts": {
+    "^Ran 2 tests in ": 1,
+    "^FAILED \\(errors=2\\)$": 1,
+    "^ZeroDivisionError: division by zero$": 2,
+    "AssertionError": 0,
+    "^OK$": 0
+  }
+}

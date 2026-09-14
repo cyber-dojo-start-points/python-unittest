@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "^test_hiker\\.py:[0-9]+: error: .* \\[syntax\\]$": 1,
+    "^SyntaxError: '\\(' was never closed$": 1,
+    "^Ran [0-9]+ tests? in ": 0,
+    "^OK$": 0
+  }
+}

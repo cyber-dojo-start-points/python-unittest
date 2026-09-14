@@ -1,0 +1,9 @@
+{
+  "match_counts": {
+    "^Ran 4 tests in ": 1,
+    "^F\\.\\.\\.$": 1,
+    "^FAILED \\(failures=1\\)$": 1,
+    "^FAIL: test_the_answer_is_three_digits_long \\(test_answer_size\\.": 1,
+    "^OK$": 0
+  }
+}

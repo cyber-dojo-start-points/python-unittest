@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 35,
+  "match_counts": {
+    "^hiker_checks\\.py:[0-9]+: error: .* \\[syntax\\]$": 1,
+    "^Couldn't parse '.*/hiker_checks\\.py' as Python source: ": 1,
+    "^Ran 1 test in ": 1,
+    "^OK$": 1,
+    "^TOTAL ": 0
+  }
+}

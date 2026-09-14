@@ -1,0 +1,9 @@
+{
+  "max_output_lines": 45,
+  "match_counts": {
+    "^Ran 1 test in ": 1,
+    "^OK$": 1,
+    "^hiker_checks\\.py +[0-9]+ +[0-9]+ +0%": 1,
+    "three_digits": 0
+  }
+}

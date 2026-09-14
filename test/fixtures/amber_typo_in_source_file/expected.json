@@ -1,0 +1,10 @@
+{
+  "max_output_lines": 50,
+  "match_counts": {
+    "^hiker\\.py:[0-9]+: error: Name \"sevn\" is not defined +\\[name-defined\\]$": 1,
+    "^NameError: name 'sevn' is not defined": 1,
+    "^FAILED \\(errors=1\\)$": 1,
+    "AssertionError": 0,
+    "^OK$": 0
+  }
+}

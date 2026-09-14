@@ -1,0 +1,8 @@
+{
+  "max_output_lines": 45,
+  "match_counts": {
+    "^answer was called$": 1,
+    "^Ran 1 test in ": 1,
+    "^OK$": 1
+  }
+}
