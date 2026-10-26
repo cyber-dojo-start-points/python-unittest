@@ -1,6 +1,6 @@
 [![GitHub CI](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
-### display_name="Python 3.15.0, unittest"
+### display_name="Python 3.15.1, unittest"
 ### image_name="[ghcr.io/cyber-dojo-languages/python_unittest](https://github.com/cyber-dojo-languages/python-unittest/pkgs/container/python_unittest)"
 
 ![cyber-dojo.org home page](https://github.com/cyber-dojo/cyber-dojo/blob/master/shared/home_page_snapshot.png)
